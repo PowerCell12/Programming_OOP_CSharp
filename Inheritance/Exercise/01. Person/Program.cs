@@ -1,0 +1,21 @@
+using System;
+
+class Program {
+  static void Main()
+  {
+    
+   string name = Console.ReadLine();
+   int age = int.Parse(Console.ReadLine());
+
+
+   if (age <= 15){
+    Child child = new Child(name, age);
+    Console.WriteLine(child);
+  }
+  else{
+    Person person = new Person(name, age);
+    Console.WriteLine(person);
+  }
+    
+  }
+}
